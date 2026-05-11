@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Obsidian local state — vault settings are per-user (theme, plugins,
+# workspace layout, hotkeys). Each cloner should configure their own.
+.obsidian/
+
+# RAG local DB (machine-local, never commit)
+rag_db/
+
+# Claude Code per-user settings (ship .claude/settings.json.example only;
+# users copy to .claude/settings.json themselves if they want hook automation).
+.claude/settings.json
+.claude/settings.local.json
+
+# User's own wiki content — when this template is cloned for actual use,
+# these folders get populated with personal research. Uncomment if you want
+# the template repo itself to keep these empty:
+# papers/
+# papers_web/

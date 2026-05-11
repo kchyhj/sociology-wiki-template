@@ -1,0 +1,15 @@
+{
+  "_comment": "Optional Claude Code hooks for the wiki. To enable: copy this file to .claude/settings.json (drop the .example). The Stop hook below runs incremental RAG indexing whenever a Claude Code session ends, so the index stays current without manual intervention. The lock guard in scripts/index_papers.py prevents concurrent runs from corrupting the DB.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python scripts/index_papers.py --incremental"
+          }
+        ]
+      }
+    ]
+  }
+}
